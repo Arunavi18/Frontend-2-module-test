@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module test</title>
+    <link rel="stylesheet" href="style.css">
+ </head>
+<body>
+
+       <!-- section1 album -->
+
+    <section class="album">
+         
+        <h1>Gallery:</h1>
+
+        <div>
+            <button id="image1" onclick="registsrationFormFunction()">
+                <img class="image" src="./registration.jpg" alt="picture1">
+            </button>
+        </div>
+
+        <div>
+            <button id="image2" onclick="registeredDetailsFunction()">
+                <img class="image" src="./registrationdetails.jpg" alt="picture2">
+            </button>
+        </div>
+
+        <div>
+            <button id="image3" onclick="diceGameAndScoreFunction()">
+            <img class="image" src="./r dice image.jpg" alt="picture3">
+            </button>
+        </div>
+
+        <div>
+         <button id="image4" onclick="couponCodeFunction()">
+            <img class="image" src="./r4 image.jpg" alt="picture4">
+         </button>    
+        </div>
+    </section>
+    <!-- registration-form -->
+    
+     <div  class="registrationform hidded" id="form">
+        <form onsubmit="submitFormFunction(event)">
+            <div>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+
+            <div>
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" placeholder="Enter username" required>
+            </div>
+
+            <div>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" placeholder="Enter email address" required>
+            </div>
+            
+            <input id="submitBtn" onclick="(e)=>submitFormFunction(e)" type="submit">
+
+        </form>
+     </div>
+
+    <!-- Registered details-->
+
+    <div class="registeredDetails hidded" id="displaydetails">
+        <h1>Your registerd details</h1>
+        <span id="details"></span>
+        <p>By clicking next image you will procede</p>
+    </div>
+
+    <!--Dicegame and score-->
+
+    <div class="diceScore hidded" id="dicewithscore">
+        <p>Attempts : <span id="attempts">0</span></p>
+        <div>
+            <button id="dicepic" onclick="diceClick()"><img id="dicepic" class="image" src="./playing dice.jpg" alt="dicepic"></button>
+            <p>Remaining : <span id="diceClicks">3</span> </p>
+            <p>Your total score is: <span id="score">0</span> </p> 
+        </div>
+    </div>
+
+
+    <!--Congrulations and try again-->
+    <div>
+        <img class="congrats hidded" id="congratsPic" src="./congrulations image.jpg" alt="Congrulations picture"> 
+    </div>
+    
+    <!-- <div>
+        <img class="hidded" id="tryAgainPic" src="" alt="Try again image"> 
+    </div> -->
+
+    <script src="script.js"></script>
+</body>
+</html>

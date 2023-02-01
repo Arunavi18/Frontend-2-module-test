@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;;
+}
+.hidded {
+    display: none;
+}
+
+body {
+   background-color: #000000;
+   color: #fff;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.album {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.album div{
+    width: 25%;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+}
+
+img{
+    border: 2px solid rgb(98, 18, 218);
+    width: 350px;
+    height: 250px;
+}
+
+form {
+    border: 2px solid white;
+    text-align: center;
+    width: 40%;
+    justify-content: center;
+    padding: 25px;
+    margin: 50px;
+}
+
+
